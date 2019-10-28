@@ -175,9 +175,41 @@
                     </div>
                 </div>
               </div>
+		<div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="card">
+                    <img class="card-img-top" id="environmentBoxPlot" src="plots/general_boxplot.png">
+                    <div class="card-body">
+                      <h4 class="card-title">Grade distribution for each specialisation in different environments </h4>
+                      <p class="card-text">Using this statistic we wanted to test a common myth that says that girls usually get higher grades than boys.</p>
+                      <p class="card-text">
+                        <select id="selectEnvironmentBoxPlot" class="selectpicker" data-style="btn btn-link">
+                          <option value="general_boxplot.png">All</option>
+                          <option value="urban_boxplot.png">Urban</option>
+                          <option value="rural_boxplot.png">Rural</option>
+                        </select>
+                      </p>
+                    </div>
+                </div>
+              </div>
+	 <div class="col-lg-4 col-md-6 col-sm-6">
+                <div class="card">
+                    <img class="card-img-top" id="thirdOptionDistribution" src="plots/TOMI.png">
+                    <div class="card-body">
+                      <h4 class="card-title">Third optin distribution for each specialisation </h4>
+                      <p class="card-text">Using this statistic we wanted to test a common myth </p>
+                      <p class="card-text">
+                        <select id="selectThirdOptionDistribution" class="selectpicker" data-style="btn btn-link">
+                          <option value="TOMI.png">Mate-Info</option>
+                          <option value="TOF.png">Filologie</option>
+                          <option value="TOSN.png">Stiinte ale Naturii</option>
+                        </select>
+                      </p>
+                    </div>
+                </div>
+              </div>
           </div>
         </div>
-      </div>
+       </div>
       <footer class="footer">
         <div class="container-fluid">
           <nav class="float-left">
@@ -217,3 +249,24 @@ $('#selectGenderPieChart').change(function(){
 });
 
 </script>
+
+
+
+<script>
+
+$('#selectEnvironmentBoxPlot').change(function(){
+  $('#environmentBoxPlot').attr("src", "plots/" + $(this).val())
+});
+
+</script>
+
+
+<script>
+
+$('#selectThirdOptionDistribution').change(function(){
+  $('#thirdOptionDistribution').attr("src", "plots/" + $(this).val())
+});
+
+</script>
+
+
