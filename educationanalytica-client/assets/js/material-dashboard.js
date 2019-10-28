@@ -188,9 +188,9 @@ md = {
       /* ----------==========     Daily Sales Chart initialization For Documentation    ==========---------- */
 
       dataDailySalesChart = {
-        labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+        labels: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
         series: [
-          [12, 17, 7, 17, 23, 18, 38]
+          [0, 1000, 2000, 3000, 4000, 10000, 5000, 4000, 3000, 4000, 1500]
         ]
       };
 
@@ -199,7 +199,7 @@ md = {
           tension: 0
         }),
         low: 0,
-        high: 50, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+        high: 11000, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
         chartPadding: {
           top: 0,
           right: 0,
@@ -313,9 +313,9 @@ md = {
       /* ----------==========     Daily Sales Chart initialization    ==========---------- */
 
       dataDailySalesChart = {
-        labels: ['M', 'T', 'W', 'T', 'F', 'S', 'S'],
+        labels: ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10'],
         series: [
-          [12, 17, 7, 17, 23, 18, 38]
+          [0, 1000, 2000, 3000, 4000, 10000, 5000, 4000, 3000, 4000, 1500]
         ]
       };
 
@@ -324,7 +324,7 @@ md = {
           tension: 0
         }),
         low: 0,
-        high: 50, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
+        high: 11000, // creative tim: we recommend you to set the high sa the biggest value + something for a better look
         chartPadding: {
           top: 0,
           right: 0,

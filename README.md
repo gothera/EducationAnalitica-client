@@ -1,1 +1,0 @@
-# EducationAnalitica-client
